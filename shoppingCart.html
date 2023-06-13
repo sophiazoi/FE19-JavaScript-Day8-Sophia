@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower Shop</title>
+    <script src="shoppingCart.js" defer></script>
+  </head>
+  <body>
+    <h1>Flower Shop</h1>
+    <div id="cart">
+      <h2>Shopping Cart</h2>
+      <div id="itemCount">Item count: 0</div>
+      <div id="totalSum">Total sum: $0.00</div>
+      <div id="discount">Discount: $0.00</div>
+      <button id="addButton" onclick="addToCart('Rose', 10)">
+        Add Rose to Cart
+      </button>
+      <button id="addButton" onclick="addToCart('Lily', 8)">
+        Add Lily to Cart
+      </button>
+      <button id="removeButton" onclick="removeFromCart('Rose')">
+        Remove Rose from Cart
+      </button>
+      <button id="removeButton" onclick="removeFromCart('Lily')">
+        Remove Lily from Cart
+      </button>
+      <input
+        type="number"
+        id="quantityInput"
+        placeholder="Enter quantity"
+        min="1"
+        value="1"
+      />
+      <button id="changeButton" onclick="changeQuantity('Rose')">
+        Change Quantity
+      </button>
+      <button id="changeButton" onclick="changeQuantity('Lily')">
+        Change Quantity
+      </button>
+    </div>
+  </body>
+</html>
